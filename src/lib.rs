@@ -208,7 +208,7 @@ fn get_display_refresh_rate(
         Limiter::Off => {
             #[cfg(feature = "framepace_debug")]
             if settings.is_changed() {
-                bevy_log::info!("Frame limiter disabled");
+                bevy_log::info!("Frame limiter disabled.");
             }
             return;
         }
